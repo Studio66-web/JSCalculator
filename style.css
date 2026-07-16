@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pliant:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #0b0b1b;
+}
+
+.calc-frame {
+    flex-direction: column;
+    padding: 25px;
+    padding-top: 50px;
+    background: #141431;
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 15px;
+}
+
+.output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.output input {
+    border: 0;
+    background: #141431;
+    text-align: right;
+    width: 400px;
+    font-size: 36px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.control-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background: #2e2c48;
+    border: 0;
+    border-radius: 7px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: 100px;
+    font-size: 28px;
+
+    &:hover {
+        background: #3c3a5e;
+    }
+
+    &:active {
+        background: #24223a;
+    }
+}
+
+.db-button {
+    background: #2e2c48;
+    border: 0;
+    border-radius: 7px;
+    grid-column: span 2;
+    aspect-ratio: auto;
+    font-size: 28px;
+
+    &:hover {
+        background: #3c3a5e;
+    }
+
+    &:active {
+        background: #24223a;
+    }
+}
+
+.ct-button {
+    background: #fa30ab;
+    border: 0;
+    border-radius: 7px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: 100px;
+    font-size: 28px;
+
+    &:hover {
+        background: #ff5bbd;
+    }
+
+    &:active {
+        background: #ba156f;
+    }
+}
+
+.res-button {
+    background: #fa30ab;
+    border: 0;
+    border-radius: 7px;
+    grid-column: span 4;
+    aspect-ratio: auto;
+    font-size: 28px;
+    height: 50px;
+
+    &:hover {
+        background: #ff5bbd;
+    }
+
+    &:active {
+        background: #ba156f;
+    }
+}
+
+.del-button {
+    background: #141431;
+    border: 0;
+    font-size: 24px;
+    border-radius: 5px;
+
+    &:hover {
+        background: #3c3a5e;
+    }
+
+    &:active {
+        background: #24223a;
+    }
+}
