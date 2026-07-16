@@ -25,7 +25,7 @@ function calculate() {
         currentInput = String(res)
         updateDisplay()
     } catch(error) {
-        currentInput("Error")
+        currentInput = "Error"
         updateDisplay()
     }
 }
